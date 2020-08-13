@@ -12,6 +12,7 @@ except FileNotFoundError:
 
 
 print("Hello")
+print("Hello")
     
 # import modules
 import menu1
