@@ -7,7 +7,7 @@ def gate_x(t_password):
     wrong_flag = True  # True if end all tries wrong
 
     print("\nIf you want go back type \"Exit\"\n")
-    for i in range(3):  # Limit the try to enter the password
+    for _ in range(3):  # Limit the try to enter the password
         entered_password = input('\nEnter The Old Password : ')
         if entered_password == "Exit":  # Return the Exit flag
             return '-1'
