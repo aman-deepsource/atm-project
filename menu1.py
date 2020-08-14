@@ -3,12 +3,12 @@ from create_account import create_account
 from read_file import read_file
 from menu2 import clear_screen
 
-accounts_list = read_file('Accounts.txt')
+accounts_list = read_file("Accounts.txt")
 
 
 def menu1():
-    print('>>>>>>>>WELCOME<<<<<<<<\n')
-    choice = int(input('1) Login\n2) Create Account\n3) Exit\n\nchoice>> '))
+    print(">>>>>>>>WELCOME<<<<<<<<\n")
+    choice = int(input("1) Login\n2) Create Account\n3) Exit\n\nchoice>> "))
     if choice == 1:
         clear_screen()
         try:
@@ -24,9 +24,9 @@ def menu1():
     else:
         clear_screen()
         print("ERROR: Wrong choice\n")
-    
+
     menu1()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     menu1()
